@@ -1,0 +1,78 @@
+.left_wing_action
+{
+    animation:left_wing 0.2s infinite;
+    -webkit-animation:left_wing 0.2s infinite;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: right right;
+}
+.right_wing_action
+{
+    animation:right_wing 0.2s infinite;
+    -webkit-animation:right_wing 0.2s infinite;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: right right;
+}
+
+.bird_action
+{
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: right right;
+    animation:bird 0.2s infinite;
+    -webkit-animation:bird 0.2s infinite;
+}
+.box_1{background-color: #000; width: 100px; height: 100px;float: left; margin-left: 200px; margin-top: 300px; position: absolute;}
+.text{ float: left;}
+
+@-ms-keyframes left_wing { from { -ms-transform: rotateZ(0deg); } to { -ms-transform: rotateZ(-15deg); }}
+@-moz-keyframes left_wing { from { -moz-transform: rotateZ(0deg); } to { -moz-transform: rotateZ(-15deg); }}
+@-webkit-keyframes left_wing { from { -webkit-transform: rotateZ(0deg); } to { -webkit-transform: rotateZ(-15deg); }}
+@keyframes left_wing { from { transform:rotateZ(0deg); } to { transform:rotateZ(-15deg); }}
+
+@-ms-keyframes right_wing { from { -ms-transform: rotateZ(0deg); } to { -ms-transform: rotateZ(15deg); }}
+@-moz-keyframes right_wing { from { -moz-transform: rotateZ(0deg); } to { -moz-transform: rotateZ(15deg); }}
+@-webkit-keyframes right_wing { from { -webkit-transform: rotateZ(0deg); } to { -webkit-transform: rotateZ(15deg); }}
+@keyframes right_wing { from { transform:rotateZ(0deg); } to { transform:rotateZ(15deg); }}
+
+@-ms-keyframes bird { from { -ms-transform: rotateZ(0deg); } to { -ms-transform: rotateZ(2deg); }}
+@-moz-keyframes bird { from { -moz-transform: rotateZ(0deg); } to { -moz-transform: rotateZ(2deg); }}
+@-webkit-keyframes bird { from { -webkit-transform: rotateZ(0deg); } to { -webkit-transform: rotateZ(2deg); }}
+@keyframes bird { from { transform:rotateZ(0deg); } to { transform:rotateZ(2deg); }}
+
+/*
+
+.arm
+    {
+    fill:#000;
+    transform-origin: 0 0;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    animation:action 5s infinite;
+    -webkit-animation:action 5s infinite;
+    }
+
+
+@-ms-keyframes action { from { -ms-transform: rotateZ(0deg); } to { -ms-transform: rotateZ(-60deg); }}
+@-moz-keyframes action { from { -moz-transform: rotateZ(0deg); } to { -moz-transform: rotateZ(-60deg); }}
+@-webkit-keyframes action { from { -webkit-transform: rotateZ(0deg); } to { -webkit-transform: rotateZ(-60deg); }}
+@keyframes action { from { transform:rotateZ(0deg); } to { transform:rotateZ(-60deg); }}
+
+
+
+.bird:hover .s_eye
+{
+    animation:eye 2s ;
+    -webkit-animation:eye 2s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+}
+
+@-ms-keyframes eye { from {-ms-transform:scale(1,1);} to { -ms-transform:scale(2,2); }}
+@-webkit-keyframes eye { from { -webkit-transform:scale(1,1);  } to { -webkit-transform:scale(2,2); }}
+@keyframes eye { from {  transform:scale(1,1);} to {  transform:scale(2,2); }}
+
+-/
